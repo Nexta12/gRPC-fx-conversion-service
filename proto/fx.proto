@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+service FXService {
+  rpc GetQuote (QuoteRequest) returns (QuoteResponse) {}
+}
+
+message QuoteRequest {}
+
+message QuoteResponse {
+  string quote = 1;
+}
